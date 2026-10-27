@@ -2,7 +2,7 @@
 
 A front-end-only React + Vite prototype for a two-sided marketplace matching empty truck return journeys with compatible shipment requests. All data, accounts, bookings, payments and verification are simulated in browser memory.
 
-> **We don't sell trucks. We sell access to underutilised truck capacity.**
+[Live Link - Vercel](https://empty-truck-marketplace-prototype.vercel.app/)
 
 ## Run locally
 
