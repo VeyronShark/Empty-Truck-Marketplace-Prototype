@@ -1,0 +1,49 @@
+export const seedUsers = [
+  { id: 'u1', name: 'Ramesh Kumar', business: 'Ramesh Transport', role: 'owner', city: 'Bhubaneswar', phone: '+91 98765 43210', rating: 4.9, reviews: 28, verified: true, initials: 'RK' },
+  { id: 'u2', name: 'Ananya Das', business: 'Utkal Distributors', role: 'shipper', city: 'Cuttack', phone: '+91 98765 43211', rating: 4.8, reviews: 16, verified: true, initials: 'UD' },
+  { id: 'u3', name: 'Sanjay Nayak', business: 'Coastal Cargo Co.', role: 'owner', city: 'Puri', phone: '+91 98765 43212', rating: 4.7, reviews: 19, verified: true, initials: 'SN' },
+  { id: 'u4', name: 'Meera Patel', business: 'Eastern Fresh Foods', role: 'shipper', city: 'Sambalpur', phone: '+91 98765 43213', rating: 4.9, reviews: 34, verified: true, initials: 'MF' },
+  { id: 'u5', name: 'Prakash Sahu', business: 'Highway Hauliers', role: 'owner', city: 'Rourkela', phone: '+91 98765 43214', rating: 4.6, reviews: 12, verified: true, initials: 'PS' },
+  { id: 'u6', name: 'Kavita Singh', business: 'Ranchi Retail Supply', role: 'shipper', city: 'Ranchi', phone: '+91 98765 43215', rating: 4.7, reviews: 21, verified: true, initials: 'KS' },
+  { id: 'u7', name: 'Bikash Mohanty', business: 'Odisha Express', role: 'owner', city: 'Jatani', phone: '+91 98765 43216', rating: 4.8, reviews: 25, verified: true, initials: 'BM' },
+  { id: 'u8', name: 'Arjun Rao', business: 'South Coast Traders', role: 'shipper', city: 'Visakhapatnam', phone: '+91 98765 43217', rating: 4.5, reviews: 10, verified: true, initials: 'AR' },
+]
+
+export const seedTrucks = [
+  { id: 't1', ownerId: 'u1', owner: 'Ramesh Transport', driver: 'Ramesh Kumar', type: '14ft', capacity: 3, from: 'Cuttack', to: 'Bhubaneswar', date: '2026-10-28', window: '08:00 – 12:00', price: 28, priceType: 'per km', cargo: ['FMCG', 'Packaged goods', 'Textiles'], rating: 4.9, reviews: 28, verified: true, distance: 28, savedKm: 28, status: 'Available' },
+  { id: 't2', ownerId: 'u3', owner: 'Coastal Cargo Co.', driver: 'Sanjay Nayak', type: 'LCV', capacity: 2.5, from: 'Puri', to: 'Bhubaneswar', date: '2026-10-29', window: '09:00 – 15:00', price: 24, priceType: 'per km', cargo: ['FMCG', 'Produce'], rating: 4.7, reviews: 19, verified: true, distance: 60, savedKm: 60, status: 'Available' },
+  { id: 't3', ownerId: 'u5', owner: 'Highway Hauliers', driver: 'Prakash Sahu', type: '20ft', capacity: 8, from: 'Sambalpur', to: 'Rourkela', date: '2026-10-28', window: '06:00 – 10:00', price: 34, priceType: 'per km', cargo: ['Steel', 'FMCG', 'Industrial'], rating: 4.6, reviews: 12, verified: true, distance: 160, savedKm: 160, status: 'Available' },
+  { id: 't4', ownerId: 'u7', owner: 'Odisha Express', driver: 'Bikash Mohanty', type: 'Mini truck', capacity: 1.2, from: 'Jatani', to: 'Cuttack', date: '2026-10-28', window: '12:00 – 18:00', price: 19, priceType: 'per km', cargo: ['FMCG', 'Documents'], rating: 4.8, reviews: 25, verified: true, distance: 45, savedKm: 45, status: 'Available' },
+  { id: 't5', ownerId: 'u1', owner: 'Ramesh Transport', driver: 'Ramesh Kumar', type: '14ft', capacity: 3, from: 'Bhubaneswar', to: 'Kolkata', date: '2026-10-30', window: '05:00 – 09:00', price: 31, priceType: 'per km', cargo: ['FMCG', 'Textiles'], rating: 4.9, reviews: 28, verified: true, distance: 440, savedKm: 440, status: 'Available' },
+  { id: 't6', ownerId: 'u3', owner: 'Coastal Cargo Co.', driver: 'Sanjay Nayak', type: 'Container', capacity: 12, from: 'Visakhapatnam', to: 'Bhubaneswar', date: '2026-10-31', window: '07:00 – 13:00', price: 42, priceType: 'per km', cargo: ['Industrial', 'Packaged goods'], rating: 4.7, reviews: 19, verified: true, distance: 440, savedKm: 440, status: 'Available' },
+  { id: 't7', ownerId: 'u5', owner: 'Highway Hauliers', driver: 'Prakash Sahu', type: '14ft', capacity: 4, from: 'Rourkela', to: 'Ranchi', date: '2026-10-29', window: '10:00 – 16:00', price: 29, priceType: 'per km', cargo: ['FMCG', 'Steel'], rating: 4.6, reviews: 12, verified: true, distance: 240, savedKm: 240, status: 'Available' },
+  { id: 't8', ownerId: 'u7', owner: 'Odisha Express', driver: 'Bikash Mohanty', type: 'LCV', capacity: 2, from: 'Cuttack', to: 'Puri', date: '2026-10-30', window: '08:00 – 12:00', price: 22, priceType: 'per km', cargo: ['Produce', 'FMCG'], rating: 4.8, reviews: 25, verified: true, distance: 85, savedKm: 85, status: 'Available' },
+  { id: 't9', ownerId: 'u1', owner: 'Ramesh Transport', driver: 'Ramesh Kumar', type: '20ft', capacity: 7, from: 'Kolkata', to: 'Rourkela', date: '2026-11-01', window: '04:00 – 09:00', price: 36, priceType: 'per km', cargo: ['Textiles', 'FMCG'], rating: 4.9, reviews: 28, verified: true, distance: 360, savedKm: 360, status: 'Available' },
+  { id: 't10', ownerId: 'u5', owner: 'Highway Hauliers', driver: 'Prakash Sahu', type: 'Mini truck', capacity: 1, from: 'Raipur', to: 'Sambalpur', date: '2026-10-31', window: '11:00 – 17:00', price: 20, priceType: 'per km', cargo: ['Documents', 'FMCG'], rating: 4.6, reviews: 12, verified: true, distance: 280, savedKm: 280, status: 'Available' },
+]
+
+export const seedShipments = [
+  { id: 's1', shipperId: 'u2', business: 'Utkal Distributors', from: 'Cuttack', to: 'Bhubaneswar', cargo: 'FMCG', weight: 2, date: '2026-10-28', budget: 1200, notes: 'Cartons, stackable', status: 'Open' },
+  { id: 's2', shipperId: 'u4', business: 'Eastern Fresh Foods', from: 'Sambalpur', to: 'Rourkela', cargo: 'Produce', weight: 2, date: '2026-10-28', budget: 5000, notes: 'Keep cool and dry', status: 'Open' },
+  { id: 's3', shipperId: 'u6', business: 'Ranchi Retail Supply', from: 'Rourkela', to: 'Ranchi', cargo: 'FMCG', weight: 3, date: '2026-10-29', budget: 6500, notes: '', status: 'Open' },
+  { id: 's4', shipperId: 'u8', business: 'South Coast Traders', from: 'Visakhapatnam', to: 'Bhubaneswar', cargo: 'Packaged goods', weight: 6, date: '2026-10-31', budget: 15000, notes: 'Palletised', status: 'Open' },
+  { id: 's5', shipperId: 'u2', business: 'Utkal Distributors', from: 'Bhubaneswar', to: 'Kolkata', cargo: 'Textiles', weight: 2, date: '2026-10-30', budget: 12000, notes: '', status: 'Open' },
+  { id: 's6', shipperId: 'u4', business: 'Eastern Fresh Foods', from: 'Cuttack', to: 'Puri', cargo: 'Produce', weight: 1.5, date: '2026-10-30', budget: 1800, notes: 'Handle with care', status: 'Open' },
+  { id: 's7', shipperId: 'u6', business: 'Ranchi Retail Supply', from: 'Kolkata', to: 'Rourkela', cargo: 'Textiles', weight: 5, date: '2026-11-01', budget: 14000, notes: '', status: 'Open' },
+  { id: 's8', shipperId: 'u8', business: 'South Coast Traders', from: 'Raipur', to: 'Sambalpur', cargo: 'FMCG', weight: 0.8, date: '2026-10-31', budget: 4500, notes: 'Urgent', status: 'Open' },
+  { id: 's9', shipperId: 'u2', business: 'Utkal Distributors', from: 'Jatani', to: 'Cuttack', cargo: 'Documents', weight: 0.5, date: '2026-10-28', budget: 900, notes: '', status: 'Open' },
+  { id: 's10', shipperId: 'u4', business: 'Eastern Fresh Foods', from: 'Puri', to: 'Bhubaneswar', cargo: 'Produce', weight: 2, date: '2026-10-29', budget: 2200, notes: '', status: 'Open' },
+]
+
+export const demoTruck = {
+  id: 't-demo', ownerId: 'u1', owner: 'Ramesh Transport', driver: 'Ramesh Kumar', type: '14ft',
+  capacity: 3, from: 'Cuttack', to: 'Bhubaneswar', date: '2026-10-28', window: '08:00 – 12:00',
+  price: 28, priceType: 'per km', cargo: ['FMCG', 'Packaged goods'], rating: 4.9, reviews: 28,
+  verified: true, distance: 28, savedKm: 28, status: 'Available',
+}
+
+export const demoShipment = {
+  id: 's-demo', shipperId: 'u2', business: 'Utkal Distributors', from: 'Cuttack',
+  to: 'Bhubaneswar', cargo: 'FMCG', weight: 2, date: '2026-10-29', pickupWindow: '08:00 – 12:00', budget: 1200,
+  notes: 'Cartons, stackable', status: 'Open',
+}
