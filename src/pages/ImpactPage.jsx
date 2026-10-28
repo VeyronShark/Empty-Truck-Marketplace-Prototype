@@ -18,7 +18,7 @@ export function ImpactPage() {
       <Metric icon={<Zap />} label="Total matches" value={matches} caption={`${bookings.length} live demo bookings`} />
       <Metric icon={<BadgeIndianRupee />} label="GMV" value={`₹${gmv.toLocaleString('en-IN')}`} caption="Shipment value moved" />
       <Metric icon={<ArrowUpRight />} label="Commission earned" value={`₹${revenue.toLocaleString('en-IN')}`} caption="8% of completed bookings" />
-      <Metric icon={<ArrowDownRight />} label="Empty km saved" value={`${km + 1_240} km`} caption="Return legs carrying value" />
+      <Metric icon={<ArrowDownRight />} label="Empty km saved" value={`${km + 828} km`} caption="Return legs carrying value" />
     </div>
     <div className="impact-grid">
       <div className="impact-card"><div className="section-heading compact"><div><h2>Marketplace liquidity</h2><p>Supply and demand are meeting on the road.</p></div><span className="live-dot" /></div>
